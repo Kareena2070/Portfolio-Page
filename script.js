@@ -355,13 +355,99 @@ document.head.appendChild(style);
 projectSection()
 
 
+// Using DOM create Education section
+
+function educationSection(){
+  const eduSection = document.createElement("div");
+  eduSection.className = "eduHeading";
+
+  const eduHeading = document.createElement("h2");
+  eduHeading.textContent = "Education";
+
+  const educontent = document.createElement("p");
+  educontent.textContent = "A strong foundation in computer applications and web development through hands-on, real-world learning at NavGurukul.";
 
 
+  const eduList = document.createElement("ul");
+    const eduItems = [
+        {
+            name: "Eternal University (2024–2027)",
+            description: "Full-time Residential BCA Program with Navgurukul"
+        }, 
+        {
+            name: "Key Skills Learned",
+            description: "Web Development, Problem Solving, Team Projects"
+        }, 
+
+    ];
+
+    eduItems.forEach(learn => {
+        const li = document.createElement("li");
+        li.textContent = `${learn.name}: ${learn.description}`;
+        eduList.appendChild(li);
+    });
+      eduSection.appendChild(eduHeading);
+      eduSection.appendChild(educontent);
+      eduSection.appendChild(eduList);
+
+        
+     document.body.appendChild(eduSection);      
 
 
+     const style = document.createElement("style");
+     style.textContent = `
+       .eduHeading {
+         padding: 25px;
+         background-color: #f0f8ff;
+         border-radius: 15px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+         max-width: 1200px;
+         margin: 40px auto;
+       }
+   
+       .eduHeading h2 {
+         text-align: center;
+       }
+   
+       .eduHeading p {
+         text-align: center;
+       }
+     `;
+     document.head.appendChild(style);
+
+}
+
+educationSection()
 
 
+// Using DOM, create contact
+function contact(){
 
+const formSection = document.createElement("section");
+formSection.innerHTML = `
+  <form>
+        <div class="mb-3">
+          <label for="contactName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="contactName" placeholder="Your name">
+        </div>
+        <div class="mb-3">
+          <label for="contactEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="contactMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="contactMessage" rows="4" placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      
+`;
+
+document.body.appendChild(formSection);
+
+}
+
+contact()
 
 
 
