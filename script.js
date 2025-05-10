@@ -423,6 +423,10 @@ educationSection()
 // Using DOM, create contact
 function contact(){
 
+  const contactHeading = document.createElement("h1");
+  contactHeading.textContent = "Contact Information"
+  // body.appendChild(contactHeading)
+
 const formSection = document.createElement("section");
 formSection.innerHTML = `
   <form>
