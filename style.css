@@ -1,7 +1,184 @@
-.nav-bar{
-    text-align: right;
-    /* text-align: center; */
+/* ------------------------------ 
+#CUSTOM PROPERTY
+--------------------------------*/
+
+:root{
+
+    /*------- colors ------- */
+
+    /* blackground */
+    --bg-black:#000000;
+    --bg-black-gray: #222121;
+    --bg-transprat: linear-gradient(
+        to bottom right, 
+        hsl(0, 0%, 25%) 0%, 
+        hsla(0, 0%, 25%, 0) 50%);
+
+    /* icon */
+    --ic-1stgold:#E9A319;
+    --ic-2ndgray: #7A7A73;
+
+    /* broder */
+    --bc-white: white;
+    --bic-transprant: hsla(0, 60%, 44%, 0.412) 80%;
+
+    /* text */
+    --tc-white: white;
+
+
+    /*---------font-family -------*/
+    --ff-franklin: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+    /* ------ font-size --------*/
+    --fs-h1: 2.5em;
+    --fs-h2: 2em;
+    --fs-h3: 1.5em;
+    --fs-h4: 1em;
+    --fs-p1:1.5em;
+    --fs-p2:1em;
+
+    /*----- font-weight-------- */
+     --fw-300: 300;
+     --fw-400: 400;
+     --fw-500: 500;
+     --fw-600: 600;
+
+
+    /*------- shadow ----------*/
+     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+     --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+     --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+      /*--------- transition ---------*/
+  
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease-in-out;
+
 }
-body{
+
+
+
+/* --------------------------------
+#RESET
+--------------------------------- */
+* {
+    box-sizing: border-box;
+   
+  }
+
+
+a{ 
+    text-decoration: none; 
+    color: var(--bc-white);
+}
+  
+li{ 
+    list-style: none; 
     
+}
+
+img, i, a, button, time, span { 
+    display: block; 
+}
+
+body{background-color: var(--bg-black);}
+
+html{
+    font-family: var(--ff-franklin);
+}
+
+
+
+
+
+/* -------------------------------------------------------------
+ #Start Styling
+---------------------------------------------------------------- */
+
+
+/*-------------- Asidebar------------  */
+
+/* basic style */
+main{
+    /* margin: 5rem 2rem; */
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sidebar{
+    width: 18em;
+    background: var(--bg-black-gray);
+    border: 1px solid var(--bc-white);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--shadow-1);
+    height: auto;
+    
+}
+
+.saparate{
+    width: 100%;
+    height: 1px;
+    background-color: var(--bc-white);
+    margin: 2rem 0;
+}
+
+.name{
+    font-size: var(--fs-h2);
+    text-align: center;
+    font-weight: var(--fw-600);
+    color: var(--tc-white);
+}
+.title{
+    font-size: var(--fs-h3);
+    text-align: center;
+    color: var(--tc-white);
+    font-weight: var(--fw-400);
+    border-radius: 0.5rem;
+    display: block;
+    /* background-color: var(--bg-transprat)  */
+
+}
+
+.sidebar-info{
+    color: var(--tc-white);
+}
+
+i{
+    color: var(--ic-1stgold);
+    font-size: var(--fs-h3);
+}
+
+
+.contact-item{
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar button{
+    display: none;
+}
+
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.contact-title p,a,time,address{
+    margin-top: -1rem; 
+}
+
+.contact-title p{
+    font-weight: var(--fw-600);
+}
+
+.contact-title a, time, address{
+    font-weight: var(--fw-400);
 }
