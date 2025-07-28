@@ -238,9 +238,7 @@ responsive
         display: none;
     }
 
-    .sidebar-title{
-        margin-top: -1rem;
-    }
+    
     
     .contact {
         display: grid;
@@ -249,6 +247,14 @@ responsive
         padding: 0;
     }
 
+    .profile-img{
+        margin-top: 1rem;
+    }
+
+     .contact-name-title{
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
 
     [data-all-contact] {
         max-height: 0;
@@ -259,6 +265,80 @@ responsive
     [data-all-contact].active {
         max-height: 20rem; /* a value big enough to show all content */
     }
+
+
+}
+
+
+/* --------for max sceen 578px ---------- */
+
+@media(max-width:578px){
+
+    main{
+        padding: 0 0;
+    }
+    /* .sidebar{
+        margin: 0 0;
+    } */
+
+    .sidebar-title{
+        max-height: 6rem; 
+    }
+
+    .contact-icon{
+        list-style: none;
+    }
+    
+    .profile-img{
+        width: 80;
+        height: auto;
+        max-width:2em ;
+        max-height: 2em;
+        margin-top: 0.2rem;
+   
+        margin-left: 0;
+    }
+
+    .name{
+        font-size: var(--fs-h3);
+        margin-left: 3rem;
+    }
+
+    .title{
+        font-size: var(--fs-h4);
+    }
+    .contact-text{
+        display: none;
+    }
+
+    .contact-btn{
+        display: block;
+        position: absolute;
+        top: -3rem;
+        right: -2rem;
+        border-radius: 0.5rem;
+        font-size: var(--fs-p2);
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-name-title{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    [data-all-contact] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+      }
+    [data-all-contact].active {
+        max-height: 30rem; /* a value big enough to show all content */
+      }
+
 
 
 }
