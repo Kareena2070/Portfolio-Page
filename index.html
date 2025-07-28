@@ -14,37 +14,101 @@
   <meta property="og:url" content="https://yourdomain.com">
   <meta property="og:type" content="website">
 
+  <!-- Font Awesome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- style sheet -->
+   <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-    <!-- Navbar using bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="nav-bar" >
-        <div class="container-fluid" >
-          <a class="navbar-brand" hef="#">Kareena</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" id="home-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
+<main>
+
+  <!-- Asidebar Section/contact section -->
+        <aside class="sidebar">
+            <div class="sidebar-title">
+                <figure class="profile-img">
+                    <img src="assest/2.jpeg" alt="Kareena" width="100">
+                </figure>
+
+                <div class="contact-name-title">
+                    <h1 class="name">Kareena Yadav</h1>
+                    <p class="title">Web Developer</p>
+                </div>
+
+                <button class="show-contact-btn" data-show-contact>
+                    <span class="contact-text">Show Contact</span>
+                    <i class="fa-solid fa-arrow-down contact-btn"></i>
+                </button> 
+
+            </div>
+
+            <div class="sidebar-info" data-all-contact>
+
+                <div class="saparate"></div>
+
+                <ul class="contact">
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-title">
+                            <p>Email</p>
+                            <a href="mailto:kareenayadav1088@gmail.com">kareenayadav</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            
+                            <div class="contact-title">
+                                <p>Phone</p>
+                                <a href="tel:+917428283503">7428283503</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-title">
+                            <p>WhatsApp</p>
+                            <a href="https://wa.me/917428283503e">Chat on WhatsApp</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+
+                        <div class="contact-title">
+                            <p>Birthday</p>
+                            <time datetime="2005-04-11">April 11, 2005</time>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-title">
+                            <p>Location</p>
+                            <address>New Delhi, Delhi, India</address>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+
+</main>
+      
 
 
       
