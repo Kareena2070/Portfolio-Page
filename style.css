@@ -182,3 +182,83 @@ i{
 .contact-title a, time, address{
     font-weight: var(--fw-400);
 }
+
+
+
+
+
+
+/* -----------------
+responsive 
+------------------------*/
+/*--------------- for max sceen 1200px---------- */
+
+@media(max-width:1200px){
+
+    /* asidebar */
+    .sidebar{
+        /* max-height: 10rem; */
+        width: 100%;
+        margin-bottom: 2rem;
+        /* overflow: hidden; */
+    }
+
+    .sidebar-title{
+        display: flex;
+
+    }
+
+    .name{
+        font-size: var(--fs-h2);
+        /* margin-top: -0.5rem; */
+        font-weight: 800;
+    }
+    .title{
+        font-size: var(--fs-h4);
+        font-weight: 600;
+    }
+
+    .sidebar-title button{
+        display: inline-block;
+        /* margin-bottom: -3rem;
+        color: var(--ic-1stgold); */
+        background-color: var(--bg-black-gray);
+    }
+
+    .show-contact-btn{
+        position: absolute;
+        top: 4rem;
+        right: 3rem;
+        border-radius: 0.5rem;
+        font-size: var(--fs-p2);
+        color: var(--ic-1stgold);
+    }
+    
+    .contact-btn{
+        display: none;
+    }
+
+    .sidebar-title{
+        margin-top: -1rem;
+    }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+
+    [data-all-contact] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    [data-all-contact].active {
+        max-height: 20rem; /* a value big enough to show all content */
+    }
+
+
+}
