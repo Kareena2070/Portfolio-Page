@@ -198,19 +198,20 @@ i{
 
 /*----------navbar --------- */
 
-
+.navbar{
+    display: flex;
+    justify-content: end;
+    margin-top: 0;
+}
 
 .navbar-list{
-    margin-left: 50%;
-    display: block;
-    /* width: 50%; */
-    height: inherit;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     background-color: rgb(99, 94, 94);
-    border-radius: 1rem;
-    margin-top: 0;
+    border-radius: 0 1rem 0 ;
+    margin-top: -0.5rem;
+
    
 }
 
@@ -243,12 +244,30 @@ i{
     height: 5px;
     background-color: var(--ic-1stgold);
     border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-title{
     font-size: var(--fs-h1);
     font-weight: var(--fw-600);
 }
+
+/* ------------work section---------- */
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.work-item{
+    border: 1px solid var(--bc-white);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+
 
 
 
@@ -335,6 +354,57 @@ responsive
     }
 
 
+     /* main content */
+
+     main {
+        flex-direction: column; /* stack vertically on smaller screens */
+        align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 4rem;
+    }
+    
+    .main-content {
+    width: 100%; /* full width on smaller screens */
+    margin-left: 0;
+    margin-top: -1.5rem;
+    }
+
+
+
+    /* navbar */
+
+    .navbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background: hsla(240, 1%, 17%, 0.75); */
+    backdrop-filter: blur(6rem);
+    border: 1px solid black;
+    border-radius: 12px 12px 0 0;
+    /* box-shadow: 2em; */
+    /* z-index: 5; */
+    margin: 0;
+    padding: 0;
+    }
+
+    .navbar-list{
+        margin-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    /* about section */
+
+    .about{
+        margin-top: 0;
+    }
+
 }
 
 
@@ -353,7 +423,8 @@ responsive
 @media(max-width:578px){
 
     main{
-        padding: 0 0;
+        padding: 0.4em 0.5em 1em 0.5em;
+        padding-bottom: 4rem;
     }
     /* .sidebar{
         margin: 0 0;
@@ -417,6 +488,35 @@ responsive
         max-height: 30rem; /* a value big enough to show all content */
       }
 
+
+    /* main content */
+   
+
+
+      /* navbar */
+      .navbar{
+        display: block;
+      }
+
+      .navbar-list{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        /* flex-wrap: wrap; */
+        gap: -5rem;
+        /* background-color: #E9A319; */
+      }
+
+      .nav-link{
+        font-size: 1rem;
+        font-weight: 600;
+        
+    }
+
     
 
 }
+
+
+
+
