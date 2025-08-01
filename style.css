@@ -103,7 +103,6 @@ html{
 
 /* basic style */
 main{
-    /* margin: 5rem 2rem; */
     padding: 3rem 2rem;
     display: flex;
     justify-content: center;
@@ -119,6 +118,9 @@ main{
     box-shadow: var(--shadow-1);
     height: auto;
     
+}
+.profile-img{
+    justify-items: center;
 }
 
 .saparate{
@@ -141,7 +143,6 @@ main{
     font-weight: var(--fw-400);
     border-radius: 0.5rem;
     display: block;
-    /* background-color: var(--bg-transprat)  */
 
 }
 
@@ -191,7 +192,6 @@ i{
     background: var(--bg-black-gray);
     border: 1px solid var(--bc-white);
     border-radius: 1rem;
-    /* padding: 2rem; */
     box-shadow: var(--shadow-1);
     margin-top: 0;
 }
@@ -287,7 +287,7 @@ responsive
         /* max-height: 10rem; */
         width: 100%;
         margin-bottom: 2rem;
-        /* overflow: hidden; */
+        /* overflow: hidden;  */  /* don't use this because this stop the responsiveness */
     }
 
     .sidebar-title{
@@ -380,12 +380,9 @@ responsive
     display: flex;
     justify-content: center;
     width: 100%;
-    /* background: hsla(240, 1%, 17%, 0.75); */
     backdrop-filter: blur(6rem);
     border: 1px solid black;
     border-radius: 12px 12px 0 0;
-    /* box-shadow: 2em; */
-    /* z-index: 5; */
     margin: 0;
     padding: 0;
     }
@@ -426,9 +423,6 @@ responsive
         padding: 0.4em 0.5em 1em 0.5em;
         padding-bottom: 4rem;
     }
-    /* .sidebar{
-        margin: 0 0;
-    } */
 
     .sidebar-title{
         max-height: 6rem; 
@@ -439,18 +433,14 @@ responsive
     }
     
     .profile-img{
-        width: 80;
-        height: auto;
-        max-width:2em ;
-        max-height: 2em;
-        margin-top: 0.2rem;
-   
-        margin-left: 0;
+        max-width:1em ;
+        margin-top: 0;
+        margin-left: 2.3rem;
     }
 
     .name{
         font-size: var(--fs-h3);
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 
     .title{
@@ -502,9 +492,7 @@ responsive
         display: flex;
         justify-content: center;
         justify-items: center;
-        /* flex-wrap: wrap; */
         gap: -5rem;
-        /* background-color: #E9A319; */
       }
 
       .nav-link{
